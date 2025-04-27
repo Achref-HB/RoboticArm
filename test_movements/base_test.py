@@ -33,12 +33,12 @@ def move_servo_slowly(pin, start_pw, end_pw, duration=2.0):
 
 try:
     # Move slowly from 0 degree to 90 degree
-    move_servo_slowly(SERVO_PIN, 1100, 1800, 3.0)
+    move_servo_slowly(SERVO_PIN, 1500, 1800, 3.0)
     time.sleep(1)
     
     # Move slowly back to 0 degree
     
-    move_servo_slowly(SERVO_PIN, 1800, 1100, 3.0)
+    move_servo_slowly(SERVO_PIN, 1800, 1500, 3.0)
     
     # Turn off servo
     pi.set_servo_pulsewidth(SERVO_PIN, 0)
